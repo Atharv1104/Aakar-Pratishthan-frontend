@@ -406,26 +406,29 @@
 
 }
 
-
 .section:nth-child(2) {
+    border-left-color: var(--accent-yellow);
+}
+.section:nth-child(3) {
     border-left-color: var(--primary-blue);
 }
 
-.section:nth-child(3) {
+.section:nth-child(4) {
     border-left-color: var(--primary-red);
 }
 
-.section:nth-child(4) {
-    border-left-color: var(--primary-green);
-}
-
 .section:nth-child(5) {
-    border-left-color: var(--accent-purple);
+    border-left-color: var(--primary-green);
 }
 
 .section:nth-child(6) {
+    border-left-color: var(--accent-purple);
+}
+
+.section:nth-child(7) {
     border-left-color: var(--primary-green);
 }
+
 
 .section:hover {
     transform: translateY(-8px);
@@ -451,22 +454,25 @@
 }
 
 .section:nth-child(2):hover .animationLeft {
+    border-color: var(--accent-yellow);
+}
+.section:nth-child(3):hover .animationLeft {
     border-color: var(--primary-blue);
 }
 
-.section:nth-child(3):hover .animationLeft {
+.section:nth-child(4):hover .animationLeft {
     border-color: var(--primary-red);
 }
 
-.section:nth-child(4):hover .animationLeft {
+.section:nth-child(5):hover .animationLeft {
     border-color: var(--primary-green);
 }
 
-.section:nth-child(5):hover .animationLeft {
+.section:nth-child(6):hover .animationLeft {
     border-color: var(--accent-purple);
 }
 
-.section:nth-child(6):hover .animationLeft {
+.section:nth-child(7):hover .animationLeft {
     border-color: var(--primary-green);
 }
 
@@ -524,22 +530,25 @@
 }
 
 .section:nth-child(2) .cardContent h3 {
+    color: var(--accent-yellow);
+}
+.section:nth-child(3) .cardContent h3 {
     color: var(--primary-blue);
 }
 
-.section:nth-child(3) .cardContent h3 {
+.section:nth-child(4) .cardContent h3 {
     color: var(--primary-red);
 }
 
-.section:nth-child(4) .cardContent h3 {
+.section:nth-child(5) .cardContent h3 {
     color: var(--primary-green);
 }
 
-.section:nth-child(5) .cardContent h3 {
+.section:nth-child(6) .cardContent h3 {
     color: var(--accent-purple);
 }
 
-.section:nth-child(6) .cardContent h3 {
+.section:nth-child(7) .cardContent h3 {
     color: var(--primary-green);
 }
 
@@ -578,22 +587,25 @@
 
 
 .section:nth-child(2) .cardButton {
+    background-color: var(--accent-yellow);
+}
+.section:nth-child(3) .cardButton {
     background-color: var(--primary-blue);
 }
 
-.section:nth-child(3) .cardButton {
+.section:nth-child(4) .cardButton {
     background-color: var(--primary-red);
 }
 
-.section:nth-child(4) .cardButton {
+.section:nth-child(5) .cardButton {
     background-color: var(--primary-green);
 }
 
-.section:nth-child(5) .cardButton {
+.section:nth-child(6) .cardButton {
     background-color: var(--accent-purple);
 }
 
-.section:nth-child(6) .cardButton {
+.section:nth-child(7) .cardButton {
     background-color: var(--primary-green);
 }
 
@@ -624,26 +636,30 @@
 }
 
 .section:nth-child(2) .cardTag {
+    color: var(--accent-yellow);
+    border-color: var(--primary-blue);
+}
+.section:nth-child(3) .cardTag {
     color: var(--primary-blue);
     border-color: var(--primary-blue);
 }
 
-.section:nth-child(3) .cardTag {
+.section:nth-child(4) .cardTag {
     color: var(--primary-red);
     border-color: var(--primary-red);
 }
 
-.section:nth-child(4) .cardTag {
+.section:nth-child(5) .cardTag {
     color: var(--primary-green);
     border-color: var(--primary-green);
 }
 
-.section:nth-child(5) .cardTag {
+.section:nth-child(6) .cardTag {
     color: var(--accent-purple);
     border-color: var(--accent-purple);
 }
 
-.section:nth-child(6) .cardTag {
+.section:nth-child(7) .cardTag {
     color: var(--primary-green);
     border-color: var(--primary-green);
 }
@@ -654,22 +670,25 @@
 }
 
 .section:nth-child(2):hover .cardTag {
+    background-color: var(--accent-yellow);
+}
+.section:nth-child(3):hover .cardTag {
     background-color: var(--primary-blue);
 }
 
-.section:nth-child(3):hover .cardTag {
+.section:nth-child(4):hover .cardTag {
     background-color: var(--primary-red);
 }
 
-.section:nth-child(4):hover .cardTag {
+.section:nth-child(5):hover .cardTag {
     background-color: var(--primary-green);
 }
 
-.section:nth-child(5):hover .cardTag {
+.section:nth-child(6):hover .cardTag {
     background-color: var(--accent-purple);
 }
 
-.section:nth-child(6):hover .cardTag {
+.section:nth-child(7):hover .cardTag {
     background-color: var(--primary-green);
 }
 

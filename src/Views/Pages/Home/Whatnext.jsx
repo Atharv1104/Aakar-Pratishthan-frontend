@@ -59,16 +59,16 @@ function Whatnext() {
                     <div className={styles.cardRight}>
                         <div className={styles.contentCard} onClick={() => handleNavigation('certificates')}>
                             <div className={styles.cardContent}>
-                                <h3>{t('whatnext.getInvolved.title')}</h3>
+                                <h3>{t('whatnext.certificates.title')}</h3>
                                 <p>
-                                    {t('whatnext.getInvolved.description')}
+                                    {t('whatnext.certificates.description')}
                                 </p>
                                 <div className={styles.cardFooter}>
                                     <button className={styles.cardButton}>
-                                       {t('whatnext.getInvolved.button')}
+                                       {t('whatnext.certificates.button')}
                                         <span className={styles.arrow}>→</span>
                                     </button>
-                                    <div className={styles.cardTag}>{t('whatnext.getInvolved.static')}</div>
+                                    <div className={styles.cardTag}>{t('whatnext.certificates.static')}</div>
                                 </div>
                             </div>
                         </div>

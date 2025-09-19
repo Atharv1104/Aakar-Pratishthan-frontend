@@ -33,12 +33,17 @@
     --transition-slow: 0.5s ease;
 }
 .container{
-    margin:5rem 2rem;
-    
+    margin:5rem 3rem;
+    text-align: center;
+  align-content: center;
 }
-h1,h3{
-    line-height: 3rem;
-    margin-bottom: 1rem;
+h1{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+h3{
+    line-height: 2rem;
+    font-size: 1.3rem;
 }
 .para{
     font-weight: 600;
@@ -143,6 +148,9 @@ h1,h3{
 }
 
 @media (min-width: 768px) {
+  .container{
+    margin: 5rem 1rem;
+  }
   .form {
     display: grid;
     grid-template-columns: 1fr 1fr;

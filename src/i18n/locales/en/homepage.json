@@ -12,6 +12,12 @@
         "title":"What's Next?",
         "subtitle":"Discover the many ways you can engage with our mission",
 
+        "certificates":{
+        "title":"View Our Certificates",
+        "description":"Discover our journey of impact! Browse through our certificates and explore how our initiatives in education, sports, and community development are creating real change. Support us by volunteering, donating, or partnering to uplift underprivileged students and empower communities.",
+        "button":"Certificates ",
+        "static":"Certificates"
+        },
         "getInvolved":{
         "title":"Get Involved with us!",
         "description":"Join us in making a difference! Explore our programs in education, sports, and community development. Volunteer, donate, or partner with us to empower underprivileged students and strengthen communities.",
@@ -49,8 +55,9 @@
         "description":"Have questions or want to get involved? Reach out to us for more information about our programs, events, and how you can support our mission.",
         "button":"Contact Us ",
         "static":"Contact"
-        },
-        "badge":"Registration Number - F-0015750"
+        }
         
-    }
+        
+    },
+    "badge":"Registration Number - F-0015750"
 }
