@@ -9,7 +9,8 @@ export default function News() {
     return (
         <>
             <div className={styles.container}>
-                <h1>{t('news')} </h1>
+                <h1>{t('news.title')} </h1>
+                <h5>{t('news.subtitle')} </h5>
                 
                     <div className={styles.newscontainer}>
                         <PhotoProvider>

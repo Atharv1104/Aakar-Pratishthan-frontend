@@ -1,5 +1,5 @@
 
-import * as react  from 'react';
+
 import styles from '../../../CSS/Contact/Socialmedia.module.css'
 
 function Socialmedia() {

@@ -33,10 +33,11 @@
 }
 .container{
     margin: 2rem;
+    text-align: center;
 }
 .headers{
     margin: auto;
-    max-width: 1200px;
+    
     
 }
 .headers::after{

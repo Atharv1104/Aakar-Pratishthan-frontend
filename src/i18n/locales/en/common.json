@@ -30,7 +30,10 @@
         
     },
     "donate":"Donate Now",
-    "news":"Read news regarding Aakar Pratishthan",
+    "news":{
+        "title":"Latest News & Updates",
+        "subtitle":"Highlights from our events, programs, and community outreach."
+    },
     "programs":{
         "title":"Our Programs",
         "subtitle":"Join us in Building a Brighter Future for All: Transforming Education, Protecting the Environment, and Empowering Communities Together!",

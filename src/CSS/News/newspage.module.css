@@ -33,6 +33,18 @@
 }
 .container{
     margin:2rem;
+    text-align: center  ;
+}
+.container h5::after{
+    content: '';
+    position: absolute;
+    top:19rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--accent-orange);
+    border-radius: 2px;
 }
 .newscontainer{
     display: flex;
@@ -49,4 +61,11 @@
     height: 20rem;
     width:20rem;
     border-radius: 0.5rem;
+}
+@media (max-width:886px){
+    .newscontainer{
+    
+    margin:1rem;
+    
+}
 }

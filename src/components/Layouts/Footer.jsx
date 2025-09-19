@@ -137,7 +137,7 @@ function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/contact-us" onClick={(e) => handleNavigation('/contact-us', e)}>
+                                <a href="/contact" onClick={(e) => handleNavigation('/contact', e)}>
                                     <ArrowRight size={16} />
                                     {t('navigation.contact')}
                                 </a>
@@ -222,15 +222,15 @@ function Footer() {
                         </p>
                     </div>
                     <div className={Styles.legalLinks}>
-                        <a href="/privacy-policy">
+                        <a href="#">
                            
                             Privacy Policy
                         </a>
-                        <a href="/terms-of-service">
+                        <a href="#">
                             
                             Terms of Service
                         </a>
-                        <a href="/transparency">
+                        <a href="#">
                             
                             Transparency
                         </a>
