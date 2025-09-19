@@ -1,10 +1,13 @@
-
+import styles from "../../../CSS/Admin/adminpage.module.css"
 
 function AdminPage() {
     return(
     <>
-        <div>
-            <h1>This is Admin Dashboard</h1>
+        <div className={styles.container}>
+            <div className={styles.card}>
+                <h1>You are not an authorized person!</h1>
+            </div>
+            
         </div>
     
     

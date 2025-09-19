@@ -19,20 +19,35 @@ import {
 const handleNavigation = (href, event) => {
     if (href.includes('#')) {
         const [path, anchor] = href.split('#');
-
-        if (window.location.pathname === path) {
+        const currentPath = window.location.pathname;
+        
+        // Same page scrolling
+        if (currentPath === path || path === '') {
             event.preventDefault();
-            const element = document.getElementById(anchor);
-            if (element) {
-                element.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+            setTimeout(() => {
+                const element = document.getElementById(anchor);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }, 100);
             return;
         }
+        
+        // Different page navigation + scrolling
+        event.preventDefault();
+        
+        // Use window.location for reliable cross-page navigation
+        window.location.href = href;
+        
+        return;
     }
+    
+    // Regular navigation - no action needed, let Link handle it
 };
+
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -138,20 +153,14 @@ function Footer() {
                         </h4>
                         <ul className={Styles.footerLinks}>
                             <li>
-                                <a href="/programs/education" onClick={(e) => handleNavigation('/programs/education', e)}>
+                                <a href="/programs" onClick={(e) => handleNavigation('/programs', e)}>
                                     <BookOpen size={16} />
-                                    {t('navigation.educationprogram')}
+                                    {t('navigation.programs')}
                                 </a>
                             </li>
+                            
                             <li>
-                                <a href="/programs/sports" onClick={(e) => handleNavigation('/programs/sports', e)}>
-                                    <Trophy size={16} />
-                                    {t('navigation.sportsprogram')}
-                                </a>
-                            </li>
-                           
-                            <li>
-                                <a href="/news-events" onClick={(e) => handleNavigation('/news-events', e)}>
+                                <a href="/news" onClick={(e) => handleNavigation('/news', e)}>
                                     <ArrowRight size={16} />
                                    {t('navigation.newsandupdates')}
                                 </a>

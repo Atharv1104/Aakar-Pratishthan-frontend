@@ -54,11 +54,14 @@ const AppBar = () => {
 
     // SIMPLIFIED SMOOTH SCROLL FUNCTION
     const handleNavigation = (href, event) => {
-        if (href.includes('#')) {
-            const [path, anchor] = href.split('#');
-
-            if (window.location.pathname === path) {
-                event.preventDefault();
+    if (href.includes('#')) {
+        const [path, anchor] = href.split('#');
+        const currentPath = window.location.pathname;
+        
+        // Same page scrolling
+        if (currentPath === path || path === '') {
+            event.preventDefault();
+            setTimeout(() => {
                 const element = document.getElementById(anchor);
                 if (element) {
                     element.scrollIntoView({
@@ -66,10 +69,22 @@ const AppBar = () => {
                         block: 'start'
                     });
                 }
-                return;
-            }
+            }, 100);
+            return;
         }
-    };
+        
+        // Different page navigation + scrolling
+        event.preventDefault();
+        
+        // Use window.location for reliable cross-page navigation
+        window.location.href = href;
+        
+        return;
+    }
+    
+    // Regular navigation - no action needed, let Link handle it
+};
+
 
     const toggleMobileSubmenu = (index) => {
         setMobileSubmenuOpen(prev => ({
