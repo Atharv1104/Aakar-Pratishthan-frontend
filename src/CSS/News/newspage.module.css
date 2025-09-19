@@ -38,7 +38,7 @@
 .container h5::after{
     content: '';
     position: absolute;
-    top:19rem;
+    top:18rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;

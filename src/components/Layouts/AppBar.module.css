@@ -692,7 +692,7 @@
 @media (max-width: 480px) {
     .mainNavInner,
     .topBarInner {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     
     .logoSection {
@@ -701,8 +701,8 @@
     }
     
     .logoImage {
-        width: 4rem;
-        height: 4rem;
+        width: 5.5rem;
+        height: 5.5rem;
     }
     
     .logoTextImage {
