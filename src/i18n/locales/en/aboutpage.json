@@ -1,0 +1,113 @@
+{
+    "badge": "Est. August 20, 2023",
+    "hero": {
+        "title": "Building Communities, Transforming Lives",
+        "subtitle": "Through Education, Sports & Holistic Development",
+        "description": "Aakar Pratishthan was founded by a group of like-minded individuals determined to create opportunities for society's holistic development. We believe that real change begins with inclusive education, healthcare, sports training, and cultural enrichment.",
+        "calltoaction": "Join us in our mission to create a better future for all.",
+        "teambutton": " Meet Our Team",
+        "journy":"Our Journy So Far"
+    },
+    "achievements": {
+        "founded": {
+            "label": "Founded",
+            "value":"August 20, 2023"
+        },
+        "teammembers": {
+            "label":"Team Members",
+            "value":"15+"
+        },
+        "impact": {
+            "label":"Lives impacted",
+            "value":"10+"
+        },
+        "programs":{
+            "label":"Programs",
+            "value":"3"
+        } 
+    },
+    "missionvision": {
+        "title":"Mission & Vision",
+        "mission": "To foster comprehensive societal development by providing equitable access to quality education, healthcare, sports, cultural enrichment, and social welfare services across all communities—with special focus on urban, rural, tribal, slum, and marginalized areas.",
+        "vision": "To create an educated, healthy, unified, and self-reliant society rooted in cultural harmony, environmental stewardship, and social justice—where every individual, regardless of background, has equal opportunities to live with dignity and achieve their full potential."
+        
+    },
+    "team": "Introducing Our Team!",
+    "members": {
+        "member1": {
+            "name": "Shri. Ajay Suresh Salagre",
+            "role": "Chairperson - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: DEE; Professional background: Industry/Entrepreneur."
+        },
+        "member2": {
+            "name": "Shri. Ramdas Sitaram Sakpal",
+            "role": "vice-chairperson - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: 10th; Professional background: Business and Farming."
+        },
+        "member3": {
+            "name": "Shri. Rajaram Maruti Shelar",
+            "role": "Secretory - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.Com, D.Ed.; Professional background: Primary Teacher."
+        },
+        "member4": {
+            "name": "Shri. Dnyaneshwar Tukaram Utekar",
+            "role": "Joint-Secretory - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.A., B.Ed.; Professional background: Primary Teacher."
+        },
+        "member5": {
+            "name": "Shri. Ravikant Raghunath Sakpal",
+            "role": "Treasurer - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: M.A., B.Ed.; Professional background: Retired Headmaster."
+        },
+        "member6": {
+            "name": "Shri. Sunil Sitaram Chavan",
+            "role": "Joint-Treasurer - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.Com; CAIIB; Certificate in MSME Finance (IIBF); Diploma in International Banking (IIBF); Professional background: Retired GM (Central Bank of India); VP (New Opportunity Consultancy Pvt Ltd); Partner (Prasad Food Divine)."
+        },
+        "member7": {
+            "name": "Shri Ajitkumar Vishwas Jangam",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.A., B.Ed.; Professional background: Retired Headmaster."
+        },
+        "member8": {
+            "name": "Shri. Hindurav Kisan Mali",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.Sc., B.Ed., D.Ed.; Professional background: Teacher."
+        },
+        "member9": {
+            "name": "Shri. Amar Suresh Salagare",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: DME; Professional background: Job/Service."
+        },
+        "member10": {
+            "name": "Shri. Dnyaneshwar Sitaram Sakpal",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: S.S.C.; Professional background: Business."
+        },
+        "member11": {
+            "name": "Shri. Sunil Laxman Malwade",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: B.A., D.Ed.; Professional background: Retired Teacher."
+        },
+        "member12": {
+            "name": "Shri. Ganesh Manohar Pore",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: 10th, ITI; Professional background: Job/Service."
+        },
+        "member13": {
+            "name": "Shri. Pramod Dhondiram Kate",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: GDCA, BSW; Professional background: Self-employed."
+        },
+        "member14": {
+            "name": "Sau. Sangita Sunil Malwade",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: D.Ed.; Professional background: Retired Teacher."
+        },
+        "member15": {
+            "name": "Sau. Vaishali Salagre",
+            "role": "Founding-member - Aakar Pratishthan, Poladpur",
+            "information": "Qualification: M.A. (Political Science); B.A. (English, Political Science); D.Ed.; B.Ed.; Professional background: Primary Teacher."
+        }
+    }
+}

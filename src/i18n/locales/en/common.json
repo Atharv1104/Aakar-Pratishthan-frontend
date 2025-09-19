@@ -1,0 +1,38 @@
+{
+    "navigation":{
+        "home":"Home",
+        "whoweare":"Who we are",
+        "whatwedo":"Our programs",
+        "newsandupdates":"News and Updates",
+        "contact":"Contact",
+        "adminlogin":"Admin Login",
+        "aboutus":"About Us",
+        "ourteam":"Our Team",
+        "missionvision":"Mission & Vision",
+        "contactus":"Contact Us"
+    },
+    "bottomnav":{
+        "name":"Aakar Pratishthan",
+        "description":"Empowering communities through education, sports, and sustainable development initiatives. Building brighter futures since 2023.",
+        "followourjourney":"Follow Our Journey",
+        "instagram":"Instagram",
+        "facebook":"FaceBook",
+        "email":"Email",
+        "getintouch":"Get In Touch",
+        "address":{
+            "p1":"Mr. Ajay Salagare",
+            "p2":"House No. 866, Post: Kapade Budruk",
+            "p3":"Taluka: Poladpur, District: Raigad",
+            "p4":"Pin: 402303"
+        },
+        "mailus":"Mail us for any query"
+        
+    },
+    "donate":"Donate Now",
+    "news":"Read news regarding Aakar Pratishthan",
+    "programs":{
+        "title":"Our Programs",
+        "subtitle":"Join us in Building a Brighter Future for All: Transforming Education, Protecting the Environment, and Empowering Communities Together!",
+        "description":"On the occasion of Teacher’s Day, 5th September, primary teachers from Poladpur Taluka were personally greeted and presented with the book ‘Jai Shivray’. Present on this occasion were Aakar Pratishthan’s Chairperson Mr. Ajay Salagare, Vice-Chairperson Mr. Ramdas Sakpal, Treasurer Mr. Sakpal Sir, and Trustee Mr. Dnyaneshwar Utekar."
+    }
+}

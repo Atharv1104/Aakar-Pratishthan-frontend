@@ -1,0 +1,56 @@
+{
+    "hero":{
+        "title":"A united step towards a brighter future ",
+        "subtitle":"is the true beginning of change",
+        "description":"Aakar Pratishthan is dedicated to bringing positive transformation in the lives of underprivileged communities.",
+        "foundingtext":"Since our founding on August 20, 2023, we have been committed to creating opportunities for society's holistic development through inclusive education, healthcare access, sports training, and cultural enrichment.",
+        "calltoaction":"Join us in our mission to create a better future for all.",
+        "explore":"Explore Our Programs"
+    },
+    "donate":"Donate Now",
+    "whatnext":{
+        "title":"What's Next?",
+        "subtitle":"Discover the many ways you can engage with our mission",
+
+        "getInvolved":{
+        "title":"Get Involved with us!",
+        "description":"Join us in making a difference! Explore our programs in education, sports, and community development. Volunteer, donate, or partner with us to empower underprivileged students and strengthen communities.",
+        "button":"Get involved ",
+        "static":"Programs"
+        },
+
+        "explorePrograms":{
+        "title":"Explore Our Programs",
+        "description":"Discover transformative education, sports, and community development initiatives. From scholarships to skill-building workshops that empower underprivileged students.",
+        "button":"Learn More ",
+        "static":"Programs"
+        },
+
+        "upcomingEvents":{
+        "title":"Upcoming Events",
+        "description":"Join community events, workshops, and awareness programs. Engage with our mission through meaningful activities and connect with like-minded individuals.",
+        "button":"View Events ",
+        "static":"Events"
+        },
+        "missionVision":{
+        "title":"Our Mission & Vision",
+        "description":"Join our mission to empower students and strengthen communities through volunteering, partnerships, and advocacy. Make a lasting impact alongside us.",
+        "button":"Join Mission  ",
+        "static":"Mission"
+        },
+        "inNews":{
+        "title":"In the News",
+        "description":"Read the news articles and media coverage about our impactful work in empowering students and strengthening communities.",
+        "button":"Read News ",
+        "static":"News"
+        },
+        "contact":{
+        "title":"Contact",
+        "description":"Have questions or want to get involved? Reach out to us for more information about our programs, events, and how you can support our mission.",
+        "button":"Contact Us ",
+        "static":"Contact"
+        },
+        "badge":"Registration Number - F-0015750"
+        
+    }
+}

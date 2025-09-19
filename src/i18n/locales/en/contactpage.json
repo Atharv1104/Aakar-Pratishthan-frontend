@@ -1,0 +1,46 @@
+{
+    "form":{
+        "title":"Contact Form",
+        "subtitle":"Please fill this form to get in touch with us",
+        "firstname":"First Name",
+        "lastname":"Last Name",
+        "dob":"Date of Birth",
+        "email":"Email",
+        "phone":"Phone Number",
+        "message":"Message (optional)",
+        "agreement":"I agree to be contacted by Aakar Pratishthan regarding volunteering opportunities.",
+        "submit":"Submit"
+
+    },
+    "contact":{
+        "title":"For any queries You can contact:",
+        "person1":{
+            "Name":"Name : Shri Ajay Suresh Salagre",
+            "Email":"ajaysalagre2@gmail.com",
+            "Mobile":"Mobile No: 8237721366"
+        },
+        "person2":{
+            "Name":"Name : Shri Ramads Sitaram Sakpal",
+            "Email":"Email : ramdassakpal309@gmail.com",
+            "Mobile":"Mobile No: 7588713803"
+        },
+    
+        "person3":{
+            "Name":"Name : Shri Rajaram Maruti Shelar",
+            "Email":"Email : rajaram.shrlar2001@gmail.com",
+            "Mobile":"Mobile No: 9284694501"
+        },
+    
+        "person4":{
+            "Name":"Name : Shri Ravikant Raghunath Sakpal",
+            "Email":"Email : ravirsakpal@gmail.com",
+            "Mobile":"Mobile No: 8087929988"
+        },
+    
+        "person5":{
+            "Name":"Name : Shri Amar Suresh Salagre",
+            "Email":"Email : amarsalagare@gmail.com",
+            "Mobile":"Mobile No: 8087456123"
+        }
+    }
+}   

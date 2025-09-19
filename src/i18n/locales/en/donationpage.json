@@ -1,0 +1,59 @@
+{
+    "title":"Be the Reason of Someone's Smile.",
+    "subtitle":"Be the reason behind someone’s smile. Your support can light up lives and bring hope where it’s needed the most. Together, we can spread happiness and create lasting change.",
+    "para":"Your gift fuels education, sports, and community growth.",
+    "form":{
+        "title":"Donation Form",
+        "subtitle":"Please fill this form to confirm you donation",
+        "fullname":"Full Name",
+        "email":"Email",
+        "phone":"Phone Number",
+        "amount":"Amount donated",
+        "message":"Message (optional)",
+        "agreement":"I confirm that i have donated above amount."
+    },
+    "donationinfo":{
+        "title":"Tax Exemption NO - ",
+        "subtitle":"Please fill the form after online transfer to confirm donation status."
+        
+    },
+    "bank":{
+        "title":"ONLINE TRANSFER/ NEFT",
+        "acname":"A/c Name      : AAKAR PRATISHTHAN POLADPUR RAIGAD",
+        "bankname":" Bank Name  : Central Bank of India",
+        "acno":"Bank Account No : 5539844822",
+        "ifsc":"IFSC            : CBIN0284896",
+        "branch":"Branch name   : Kapade bk"
+    },
+    "contact":{
+        "title":"For any queries You can contact:",
+        "person1":{
+            "Name":"Name : Shri Ajay Suresh Salagre",
+            "Email":"ajaysalagre2@gmail.com",
+            "Mobile":"Mobile No: 8237721366"
+        },
+        "person2":{
+            "Name":"Name : Shri Ramads Sitaram Sakpal",
+            "Email":"Email : ramdassakpal309@gmail.com",
+            "Mobile":"Mobile No: 7588713803"
+        },
+    
+        "person3":{
+            "Name":"Name : Shri Rajaram Maruti Shelar",
+            "Email":"Email : rajaram.shrlar2001@gmail.com",
+            "Mobile":"Mobile No: 9284694501"
+        },
+    
+        "person4":{
+            "Name":"Name : Shri Ravikant Raghunath Sakpal",
+            "Email":"Email : ravirsakpal@gmail.com",
+            "Mobile":"Mobile No: 8087929988"
+        },
+    
+        "person5":{
+            "Name":"Name : Shri Amar Suresh Salagre",
+            "Email":"Email : amarsalagare@gmail.com",
+            "Mobile":"Mobile No: 8087456123"
+        }
+    }
+}   
