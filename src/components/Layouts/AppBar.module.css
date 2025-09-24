@@ -663,8 +663,8 @@
     }
     
     .logoImage {
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 5.2rem;
+        height: 5.2rem;
     }
     
     .logoTextImage {
@@ -701,8 +701,8 @@
     }
     
     .logoImage {
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 5.3rem;
+        height: 5.3rem;
     }
     
     .logoTextImage {
@@ -716,10 +716,6 @@
     
     .companyName {
         font-size: 0.875rem;
-    }
-    
-    .logoContainer {
-        margin-top: -2rem;
     }
     
     .mobileMenuButton {
