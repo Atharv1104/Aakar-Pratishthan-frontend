@@ -8,7 +8,7 @@ function Donationinfo() {
     return (
         <>
             <div className={styles.container}>
-                <h3>{t('donationinfo.title')}</h3>
+                
                 <h5>{t('donationinfo.subtitle')}</h5>
 
                 <div>
