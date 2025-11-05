@@ -9,18 +9,18 @@ import '@fontsource/roboto/700.css';
 import Hero from './Hero'
 import Whatnext from './Whatnext';
 
-import Styles from '../../../CSS/Homepage/Homepage.module.css'; 
+import Styles from '../../../CSS/Homepage/Homepage.module.css';
 
 function Home() {
     return (
-       <>
-       <Helmet>
+        <>
+            <Helmet>
                 <title>Home- Aakar Pratishthan</title>
                 <meta name="description" content="Explore about Aakar pratishthan" />
             </Helmet>
-       <Hero/>
-       <Whatnext/>
-       </>
+            <Hero />
+            <Whatnext />
+        </>
 
     )
 }
