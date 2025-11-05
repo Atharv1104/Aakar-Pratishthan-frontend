@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import styles from "../../CSS/Contact/contactform.module.css";
+import styles from "../../CSS/Contact/contactForm.module.css";
 import { useTranslation } from 'react-i18next';
 
 const nameRegex = /^[A-Za-z\s'-]{2,40}$/;   // basic letters-only names
