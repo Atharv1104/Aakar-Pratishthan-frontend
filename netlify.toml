@@ -1,20 +1,12 @@
 [build]
-  # This is the most important line for your monorepo.
-  # It tells Netlify to 'cd frontend' before doing anything.
-  base    = "frontend"
-  
-  # This command will now run inside the 'frontend' folder
-  command = "npm run build"
-  
-  # This is the path to the built site, relative
-  # to the ROOT of your repository.
-  publish = "frontend/dist"
+base = "frontend"
+command = "npm run build"
+publish = "frontend/dist"
 
-  [build.environment]
-    NODE_VERSION = "18"
+[build.environment]
+NODE_VERSION = "18"
 
-# Your redirect rule for React Router (this is perfect)
 [[redirects]]
-  from   = "/*"
-  to     = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
