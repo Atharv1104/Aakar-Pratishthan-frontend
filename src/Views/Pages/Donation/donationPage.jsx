@@ -1,13 +1,13 @@
-import DonationForm from "./donationForm.jsx";
+import DonationForm from "../../../components/Forms/donationForm.jsx";
 import Donationinfo from "./donationinfo.jsx"
 
 function donationpage() {
     return(
         <>
             <div >
-                
-                <DonationForm/>
                 <Donationinfo/>
+                <DonationForm/>
+                
             </div>
     </>
     )

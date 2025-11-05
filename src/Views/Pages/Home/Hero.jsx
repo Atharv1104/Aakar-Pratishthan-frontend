@@ -12,6 +12,9 @@ function Hero() {
     const handledonateSubmit=()=>{
         navigate('/donations');
     }
+    const handleprogramSubmit=()=>{
+        navigate('/programs');
+    }
     useEffect(() => {
         const timer = setTimeout(() => setIsVisible(true), 100);
         return () => clearTimeout(timer);
@@ -50,7 +53,7 @@ function Hero() {
                         <strong>{t('hero.calltoaction')}</strong>
                     </p>
 
-                    <button className={Styles.cta_button} aria-label="Learn more about our programs">
+                    <button className={Styles.cta_button} onClick={handleprogramSubmit} aria-label="Learn more about our programs">
                         {t('hero.explore')}
                         <ChevronRight className={Styles.cta_button_icon} size={20} />
                     </button>

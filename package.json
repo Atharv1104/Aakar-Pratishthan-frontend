@@ -17,7 +17,10 @@
     "@mui/icons-material": "^7.3.1",
     "@mui/lab": "^7.0.0-beta.16",
     "@mui/material": "^7.3.1",
+    "@mui/x-data-grid": "^8.12.1",
     "@mui/x-date-pickers": "^8.10.0",
+    "@nivo/core": "^0.99.0",
+    "@nivo/line": "^0.99.0",
     "@reduxjs/toolkit": "^2.8.2",
     "bootstrap": "^5.3.7",
     "i18next": "^25.5.2",
@@ -30,8 +33,10 @@
     "react-i18next": "^15.7.3",
     "react-multi-carousel": "^2.8.6",
     "react-photo-view": "^1.2.7",
+    "react-pro-sidebar": "^1.1.0",
     "react-redux": "^9.2.0",
-    "react-router-dom": "^7.8.1"
+    "react-router-dom": "^7.8.1",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

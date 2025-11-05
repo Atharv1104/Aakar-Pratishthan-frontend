@@ -8,12 +8,18 @@ import homepageEn from './locales/en/homepage.json';
 import aboutpageEn from './locales/en/aboutpage.json';
 import contactpageEn from './locales/en/contactpage.json';
 import donationpageEn from './locales/en/donationpage.json';
+import formsEn from './locales/en/forms.json';
+import privacyEn from './locales/en/privacypage.json';
+import donationtermsEn from './locales/en/donationterms.json';
 
 import commonMr from './locales/mr/common.json';
 import homepageMr from './locales/mr/homepage.json';
 import aboutpageMr from './locales/mr/aboutpage.json';
 import contactpageMr from './locales/mr/contactpage.json';
 import donationpageMr from './locales/mr/donationpage.json';
+import formsMr from './locales/mr/forms.json';
+import privacyMr from './locales/mr/privacypage.json';
+import donationtermsMr from './locales/mr/donationterms.json';
 
 const resources = {
   en: {
@@ -21,14 +27,20 @@ const resources = {
     homepage: homepageEn,
     aboutpage: aboutpageEn,
     contactpage: contactpageEn,
-    donationpage: donationpageEn
+    donationpage: donationpageEn,
+    forms: formsEn,
+    privacypage: privacyEn,
+    donationterms: donationtermsEn
   },
   mr: {
     common: commonMr,
     homepage: homepageMr,
     aboutpage: aboutpageMr,
     contactpage: contactpageMr,
-    donationpage: donationpageMr
+    donationpage: donationpageMr,
+    forms: formsMr,
+    privacypage: privacyMr,
+    donationterms: donationtermsMr
   }
 };
 
@@ -52,7 +64,7 @@ i18n
 
     // Default namespace
     defaultNS: 'common',
-    ns: ['common','homepage','aboutpage','contactpage','donationpage'] 
+    ns: ['common','homepage','aboutpage','contactpage','donationpage','forms','privacypage','donationterms'] 
   });
 
 export default i18n;

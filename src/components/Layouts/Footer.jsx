@@ -51,7 +51,7 @@ const handleNavigation = (href, event) => {
 
 function Footer() {
     const currentYear = new Date().getFullYear();
-    const { t } = useTranslation('common');
+    const { t } = useTranslation('privacypage');
     return (
         <footer className={Styles.footerContainer}>
             {/* Main Footer Content */}
@@ -199,9 +199,10 @@ function Footer() {
                             <div className={Styles.newsletterForm}>
                                 <div className={Styles.contactItem}>
 
-                                    <div className={Styles.contactText}>
-                                        <a href="mailto:atharvpore11@gmail.com">
-                                            atharvpore11@gmail.com
+                                    <div className={Styles.contactText}> 
+
+                                        <a href="mailto:aakarpratishthan@gmail.com" target='blank'>
+                                            aakarpratishthan@gmail.com
                                             <img src="/icons/external-link.svg" alt="" className={Styles.externalIcon} />
                                         </a>
                                     </div>
@@ -222,18 +223,15 @@ function Footer() {
                         </p>
                     </div>
                     <div className={Styles.legalLinks}>
-                        <a href="#">
+                        <a href="/privacy#privacy" target='blank'>
                            
                             Privacy Policy
                         </a>
-                        <a href="#">
+                        <a href="/privacy#terms" target='blank'>
                             
                             Terms of Service
                         </a>
-                        <a href="#">
-                            
-                            Transparency
-                        </a>
+                        
                     </div>
                 </div>
             </div>

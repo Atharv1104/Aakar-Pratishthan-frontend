@@ -457,17 +457,7 @@ const AppBar = () => {
                 <div className={styles.topBarInner}>
                     <div className={styles.topBarRight}>
                         <Donate />
-                        <figure className={styles.socialIcons}>
-                            <a href="#" className={styles.socialIcon} aria-label="Facebook">
-                                <img src="/icons/facebook.svg" alt="Facebook" className={styles.iconcolor} />
-                            </a>
-                            <a href="#" className={styles.socialIcon} aria-label="X">
-                                <img src="/icons/x.svg" alt="X" className={styles.iconcolor} />
-                            </a>
-                            <a href="#" className={styles.socialIcon} aria-label="Instagram">
-                                <img src="/icons/instagram.svg" alt="Instagram" className={styles.iconcolor} />
-                            </a>
-                        </figure>
+                        
                         <Box sx={{ ml: 2 }}>
                             <LanguageToggle />
                         </Box>

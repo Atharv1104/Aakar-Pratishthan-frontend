@@ -14,6 +14,10 @@ import Styles from '../../../CSS/Homepage/Homepage.module.css';
 function Home() {
     return (
        <>
+       <Helmet>
+                <title>Home- Aakar Pratishthan</title>
+                <meta name="description" content="Explore about Aakar pratishthan" />
+            </Helmet>
        <Hero/>
        <Whatnext/>
        </>

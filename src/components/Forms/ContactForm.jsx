@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
-import styles from "../../../CSS/Contact/RegForm.module.css";
+import styles from "../../CSS/Contact/contactform.module.css";
 import { useTranslation } from 'react-i18next';
+
 const nameRegex = /^[A-Za-z\s'-]{2,40}$/;   // basic letters-only names
 const phoneRegex = /^[0-9]{7,15}$/;         // digits only
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i; // common email
@@ -26,7 +27,7 @@ function RegForm() {
 
     const onSubmit = async (data) => {
         try {
-            const res = await fetch("/volunteers", {
+            const res = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

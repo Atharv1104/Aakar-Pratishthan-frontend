@@ -1,0 +1,20 @@
+{
+    "policy": {
+      "headers": {
+        "mainheader": "Donation Policy",
+        "h1": "Use of Donations",
+        "h2": "Tax Exemption Status (Section 80G)",
+        "h3": "Donation Receipts",
+        "h4": "Refund and Cancellation Policy",
+        "h5": "Donor Privacy",
+        "h6": "Foreign Contributions"
+      },
+      "p_intro": "Aakar Pratishthan is grateful for the support it receives from donors. To ensure transparency, please read our donation policy.",
+      "p1": "All donations will be used to further the objectives stated in our Trust Deed, including but not limited to educational programs, community health initiatives, and cultural events.",
+      "p2": "Aakar Pratishthan is a registered non-profit public trust. However, we do not currently have 80G certification. Therefore, donations made to the trust are not eligible for tax exemption.",
+      "p3": "An official receipt will be issued for every donation. For online donations, the receipt will be sent automatically to the email address you provide.",
+      "p4": "Donations are generally non-refundable. However, we can consider a refund in cases of clear transactional errors (e.g., a duplicate payment). A written request must be sent to aakarpratishthan@gmail.com within 10 days of the transaction. ",
+      "p5": "We are committed to protecting your privacy. Your personal information will be handled in accordance with our Privacy Policy.",
+      "p6": "We currently accept donations only in Indian Rupees (INR) from Indian citizens. We are not registered under the Foreign Contribution (Regulation) Act (FCRA) and cannot accept contributions from foreign sources."
+    }
+}

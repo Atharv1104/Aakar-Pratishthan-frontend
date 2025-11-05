@@ -37,8 +37,10 @@
 }
 .headers{
     margin: auto;
-    
-    
+}
+
+.headers h2{
+    margin-bottom: 0.7rem;
 }
 .headers::after{
     content: '';
@@ -54,33 +56,91 @@
 .cardcontainer{
     display: flex;
     flex-wrap: wrap;
-    margin:5rem;
+    margin: 5rem 0; /* Reduced top/bottom margin */
     justify-content: center;
-    background-color: whitesmoke;
-    
+    /* background-color: whitesmoke; */ /* Removed this to blend with page */
 }
+
+/* --- UPDATED CARD STYLES --- */
 .card{
     width: 20rem;
     margin: 1rem;
-    background-color: var(--neutral-gray-100);
-    box-shadow: var(--shadow-md);
-    padding: 0.5rem;
-    border-radius: var(--border-radius-sm);
+    background-color: var(--neutral-white); /* Changed to white */
+    box-shadow: var(--shadow-lg); /* Upgraded shadow */
+    padding: 0.75rem; /* Apply padding */
+    border-radius: var(--border-radius-lg); /* More rounded */
+    border-top: 4px solid var(--primary-blue); /* Accent color */
     
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    transition: all var(--transition-normal);
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
 .card img{
-    height: fit-content;
-    width:20rem;
-    border-radius: 0.5rem;
+    height: auto; /* Let height be automatic */
+    width: 100%;  /* Make width 100% of the card */
+    aspect-ratio: 16 / 9; /* Force a 16:9 aspect ratio */
+    object-fit: cover; /* Cover the area, cropping if needed */
+    border-radius: var(--border-radius-md); /* Rounded corners */
     margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+/* --- NEW STYLES FOR DYNAMIC CONTENT --- */
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin: 0.5rem 0.25rem 0.25rem;
+}
+
+.card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--neutral-gray-700);
+    margin: 0 0.25rem 0.5rem;
+    flex-grow: 1; /* Makes the description fill available space */
+}
+
+.eventDetails {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--neutral-gray-600);
+    border-top: 1px solid var(--neutral-gray-200);
+    padding: 0.75rem 0.25rem 0.25rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+/* --- END OF NEW STYLES --- */
+
+@media (min-width:960px){
+   .headers h5{
+    margin: 0 10rem;
+    line-height: 2rem;
+}
+}
+@media (max-width:886px){
+    .cardcontainer{
+        margin: 1rem;
+    }
 }
 @media (max-width:480px){
-    .card img{
-        max-width: 300px;
-        max-height: fit-content;
+    .card {
+        width: 100%; /* Make cards full width on mobile */
     }
+    
     .headers::after{
         left: 40%;
     }
-    
 }

@@ -1,0 +1,22 @@
+{
+    "news":{
+        "title":"Upload News Image",
+        "upload":"Upload Image"
+    },
+    "event":{
+        "Manage": "Manage Events",
+        "add": "Add New Event",
+        "title": "Title",
+        "description": "Description",
+        "category": "Category",
+        "date": "Event Date",
+        "time": "Time",
+        "status": "Status",
+        "venu": "Location",
+        "upload": "Upload Image(s)",
+        
+        "sectionMarathi": "Marathi Content (Required)",
+        "sectionEnglish": "English Content (Optional)",
+        "sectionDetails": "Event Details"
+    }
+}

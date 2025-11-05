@@ -83,7 +83,7 @@
 .topBarRight {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */                                                                                   
     position: absolute;
     right: 1.5rem;
     top: 50%;
@@ -601,51 +601,25 @@
     .mobileMenuButton {
         display: flex;
     }
+
+    .topBarRight {
+        margin-top: 1.3rem;
+    }
 }
 
-@media (max-width: 768px) {
-    .topBarInner {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-        position: static;
+@media (max-width: 830px) {
+   .navigation {
+        display: none ;
     }
-    
-    .topBarLeft {
-        flex: none;
+    .mobileMenuButton {
+        display: inline-block   ;
     }
-    
     .topBarRight {
-        position: static;
-        margin-left: auto;
-        transform: none;
-        right: auto;
+        width: 100%;
+        justify-content: flex-end;
     }
     
-    .topBar {
-        height: 4rem;
-    }
     
-    .logoSection {
-        margin-top: -2rem;
-    }
-    
-    .logoImage {
-        width: 6rem;
-        height: 6rem;
-    }
-    
-    .logoTextImage {
-        height: 2rem; /* Adjusted for mobile */
-    }
-    
-    .companyName {
-        font-size: 1rem;
-    }
-    
-    .socialIcons {
-        display:none;
-    }
 }
 
 @media (max-width: 640px) {
@@ -687,6 +661,10 @@
         width: 1rem;
         height: 1rem;
     }
+    .navigation {
+        display: none ;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -736,19 +714,20 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 391px) {
     .logoImage {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 4rem;
+        height: 4rem;
     }
     
     .logoTextImage {
-        height: 1rem;
+        height: 1.5rem;
     }
     
     .companyName {
         font-size: 0.75rem;
     }
+    
 }
 
 /* Safe area insets for iOS devices */

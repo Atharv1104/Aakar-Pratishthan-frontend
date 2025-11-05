@@ -1,0 +1,75 @@
+{
+  "privacy": {
+    "headers": {
+      "mainheader": "Privacy Policy",
+      "intro": "Introduction",
+      "h1": "Scope and Roles",
+      "h2": "Data We Collect",
+      "h3": "Legal Bases and Purposes",
+      "h4": "Children's Data",
+      "h5": "Data Sharing and Transfers",
+      "h6": "Security",
+      "h7": "Retention and Deletion",
+      "h8": "Rights of Data Principals",
+      "h9": "Grievance Redressal",
+      "h10": "Breach Notification",
+      "h11": "Changes to This Policy"
+    },
+    "p_intro": "This Privacy Policy explains how Aakar Pratishthan Poladpur Raigad collects, uses, shares, and protects digital personal data obtained through its website, donation and volunteer forms, events, and program operations. Aakar Pratishthan Poladpur Raigad is a registered public trust with its correspondence address at c/o House No. 866, Kapade Budruk, Taluka Poladpur, District Raigad 402303, Maharashtra, India.",
+    "p1": "This policy applies to donors, volunteers, beneficiaries, partners, and site visitors whose personal data is processed by Aakar Pratishthan as a Data Fiduciary under the DPDP Act, 2023.",
+    "p2": {
+      "li1": "<strong>Identity and contact information:</strong> Name, address, email, and phone when you donate, volunteer, or participate in programs.",
+      "li2": "<strong>Transaction and donation details:</strong> Necessary to issue receipts and comply with legal obligations.",
+      "li3": "<strong>Program information:</strong> Voluntarily provided for service delivery and reporting.",
+      "li4": "<strong>Device and interaction data:</strong> Limited data to operate the website and manage consent for non-essential cookies."
+    },
+    "p3": "Processing is primarily based on valid, free, specific, informed, and unambiguous consent obtained through clear affirmative action for defined purposes. Processing may also occur for \"legitimate uses\" allowed by the Act, such as voluntary provision of data or compliance with the law.",
+    "p4": "Aakar Pratishthan will not process the personal data of children under 18 without verifiable parental or guardian consent and will avoid harmful processing, tracking, or targeted advertising directed at children.",
+    "p5": "Personal data may be shared with service providers (e.g., payment gateways) under written contracts that bind them to confidentiality and security. Cross-border transfers will be allowed unless restricted by the Central Government.",
+    "p6": "Aakar Pratishthan will implement reasonable security safeguards to prevent personal data breaches and unauthorized access or disclosure.",
+    "p7": "Personal data will be retained only for as long as necessary for the stated purposes or to meet legal and audit requirements, after which it will be securely deleted.",
+    "p8": "You may request access to your information, seek correction or erasure of personal data, and withdraw consent as provided in the Act.",
+    "p9": "Aakar Pratishthan provides a readily available grievance mechanism.",
+    "p9_address": {
+      "l1": "<strong>Grievance Officer:</strong> President/Authorized Officer, Aakar Pratishthan Poladpur Raigad",
+      "l2": "<strong>Address:</strong> c/o House No. 866, Kapade Budruk, Taluka Poladpur, District Raigad 402303, Maharashtra, India.",
+      "l3": "<strong>Email:</strong> [Recommended: grievance@yourdomain.org]"
+    },
+    "p10": "In the event of a personal data breach, Aakar Pratishthan will notify the Data Protection Board of India and affected individuals as required by the Act.",
+    "p11": "This policy may be updated to reflect changes in law or operations. A refreshed notice will be provided where required."
+  },
+  "terms": {
+    "headers": {
+      "mainheader": "Terms of Use",
+      "intro": "Introduction and Acceptance",
+      "h1": "Organization Details",
+      "h2": "Permitted Use",
+      "h3": "Donations",
+      "h4": "Intellectual Property",
+      "h5": "Third-Party Links",
+      "h6": "Data Protection",
+      "h7": "Disclaimer and Limitation of Liability",
+      "h8": "Indemnity",
+      "h9": "Grievance Redressal",
+      "h10": "Governing Law and Jurisdiction",
+      "h11": "Changes to Terms"
+    },
+    "p_intro": "These Terms of Use govern your access to the website and digital channels operated by Aakar Pratishthan Poladpur Raigad (\"Aakar Pratishthan,\" \"we,\" \"us\"). By using our site or submitting information, you agree to these Terms.",
+    "p1": "Aakar Pratishthan is a registered public trust with its correspondence address at House No. 866, Kapade Budruk, Taluka Poladpur, District Raigad 402303, Maharashtra, India.",
+    "p2": "This site is for lawful, non-commercial purposes consistent with our aims in education, health, social welfare, sports, and culture. You agree not to transmit any unlawful, defamatory, or harmful content. We reserve the right to terminate access for any violation.",
+    "p3": "All donations made through our platforms are subject to our <a href=\"/donation-policy\">Donation Policy</a>. Donations support the registered objectives of the trust.",
+    "p4": "All content on this site (text, logos, graphics) is owned by or licensed to Aakar Pratishthan and may be used for personal, non-commercial purposes only with due attribution. Any other use requires our prior written permission.",
+    "p5": "Our site may contain links to third-party platforms (e.g., payment gateways). These platforms operate under their own terms and policies, and we are not responsible for their performance.",
+    "p6": "We handle your personal data in accordance with our <a href=\"/privacy-policy\">Privacy Policy</a>, which is aligned with India's Digital Personal Data Protection Act, 2023.",
+    "p7": "The site and its content are provided \"as is\" for informational purposes. To the maximum extent permitted by Indian law, Aakar Pratishthan shall not be liable for any indirect or consequential damages arising from the use of this site or participation in our programs.",
+    "p8": "You agree to indemnify and hold harmless Aakar Pratishthan, its office-bearers, and volunteers from any claims arising from your breach of these Terms or violation of applicable laws.",
+    "p9": "For any complaints or grievances, please first contact our Grievance Officer.",
+    "p9_address": {
+      "l1": "<strong>Grievance Officer:</strong> President/Authorized Officer, Aakar Pratishthan",
+      "l2": "<strong>Address:</strong> House No. 866, Kapade Budruk, Taluka Poladpur, District Raigad 402303, Maharashtra.",
+      "l3": "<strong>Email:</strong> [Recommended: grievance@yourdomain.org]"
+    },
+    "p10": "These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the competent courts in Maharashtra.",
+    "p11": "We may update these Terms periodically. The \"Last Updated\" date will be revised, and your continued use of the site will constitute acceptance of the new terms."
+  }
+}

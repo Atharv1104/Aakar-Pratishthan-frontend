@@ -1,5 +1,5 @@
-import Socialmedia from "./Socialmedia";
-import RegForm from './RegForm';
+
+import RegForm from '../../../components/Forms/ContactForm';
 
 function Contactpage() {
     return(

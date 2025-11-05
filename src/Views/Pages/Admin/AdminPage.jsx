@@ -1,12 +1,13 @@
+import Dashboard from '../../../components/Admin/dashboard.jsx'
 import styles from "../../../CSS/Admin/adminpage.module.css"
+import { Routes, Route } from 'react-router-dom'
 
 function AdminPage() {
     return(
     <>
         <div className={styles.container}>
-            <div className={styles.card}>
-                <h1>You are not an authorized person!</h1>
-            </div>
+            <Dashboard/>
+           
             
         </div>
     
