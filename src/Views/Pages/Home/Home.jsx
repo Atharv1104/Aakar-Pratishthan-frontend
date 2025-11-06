@@ -8,8 +8,8 @@ import '@fontsource/roboto/700.css';
 
 import Hero from './Hero'
 import Whatnext from './Whatnext';
+import { Helmet } from 'react-helmet-async';
 
-import Styles from '../../../CSS/Homepage/Homepage.module.css';
 
 function Home() {
     return (

@@ -1,5 +1,6 @@
 import OurTeam from "./OurTeam"
 import Hero from "./Hero"
+import { Helmet } from 'react-helmet-async'
 
 function AboutPage() {
     return (
