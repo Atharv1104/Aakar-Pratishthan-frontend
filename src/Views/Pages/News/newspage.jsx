@@ -14,7 +14,8 @@ export default function News() {
         const fetchNews = async () => {
             try {
                 // This matches your backend GET route
-                const response = await fetch('/api/news'); 
+                const response = await fetch('/api/news');
+                console.log(response); 
                 if (!response.ok) {
                     throw new Error('Failed to fetch news');
                 }
@@ -45,6 +46,7 @@ export default function News() {
                                 <PhotoView src={item.imageUrl}>
                                     <img src={item.imageUrl} alt="Aakar Pratishthan News" />
                                 </PhotoView>
+                                
                             </div>
                         ))
                     )}
