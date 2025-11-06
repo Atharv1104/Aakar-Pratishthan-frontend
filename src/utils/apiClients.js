@@ -1,43 +1,53 @@
 /**
- * A custom fetch wrapper that automatically adds the
- * Authorization header with the JWT token from localStorage.
- * It also handles 401 Unauthorized errors by logging the user out.
- *
- * @param {string} url The API endpoint (e.g., '/api/dashboard/stats')
+ 
+ * @param {string} url The API endpoint (e.g., '/auth/login')
  * @param {object} options The options for the fetch call (method, body, etc.)
  * @returns {Promise<Response>} The fetch response
  */
+
+// 1. Read the Base URL from your Netlify environment variable
+const BASE_URL = import.meta.env.VITE_API_URL;
+
+// This is a failsafe in case the variable is missing during local development
+if (!BASE_URL && import.meta.env.MODE === 'production') {
+  console.error("CRITICAL ERROR: VITE_API_URL is not defined. API calls will fail.");
+}
+
 const apiClient = async (url, options = {}) => {
-  // 1. Get the token from localStorage
+  // 2. Create the full, absolute URL for the API request
+  // e.g., "https://.../api" + "/auth/login"
+  const fullUrl = `${BASE_URL}${url}`;
+
+  // 3. Get the token from localStorage
   const token = localStorage.getItem('token');
 
-  // 2. Prepare the headers
+  // 4. Prepare the headers
   const headers = new Headers(options.headers || {});
-  
-  // 3. Add the token if it exists
+
+  // 5. Add the token if it exists
   if (token) {
     headers.append('Authorization', `Bearer ${token}`);
   }
 
-  // 4. IMPORTANT: If the body is FormData, do NOT set Content-Type.
+  // 6. IMPORTANT: If the body is FormData, do NOT set Content-Type.
   // The browser must set it automatically to include the 'boundary'
   if (!(options.body instanceof FormData)) {
     // Only set Content-Type if it's not a file upload
     if (!headers.has('Content-Type')) {
-        headers.append('Content-Type', 'application/json');
+      headers.append('Content-Type', 'application/json');
     }
   }
 
-  // 5. Merge headers into options
+  // 7. Merge headers into options
   const fetchOptions = {
     ...options,
     headers,
   };
 
-  // 6. Make the fetch call
-  const response = await fetch(url, fetchOptions);
+  // 8. Make the fetch call to the *fullUrl*
+  const response = await fetch(fullUrl, fetchOptions);
 
-  // 7. Check for 401 Unauthorized (e.g., expired token)
+  // 9. Check for 401 Unauthorized (e.g., expired token)
   if (response.status === 401) {
     // Clear the token and force a reload to the login page
     localStorage.removeItem('token');
@@ -50,4 +60,3 @@ const apiClient = async (url, options = {}) => {
 };
 
 export default apiClient;
-
