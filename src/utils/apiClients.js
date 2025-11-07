@@ -1,15 +1,14 @@
 /**
- 
  * @param {string} url The API endpoint (e.g., '/auth/login')
  * @param {object} options The options for the fetch call (method, body, etc.)
  * @returns {Promise<Response>} The fetch response
  */
 
-// 1. Read the Base URL from your Netlify environment variable
+// 1. Read the Base URL and add /api to it
 const BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 
 // This is a failsafe in case the variable is missing during local development
-if (!BASE_URL && import.meta.env.MODE === 'production') {
+if (!import.meta.env.VITE_API_URL && import.meta.env.MODE === 'production') {
   console.error("CRITICAL ERROR: VITE_API_URL is not defined. API calls will fail.");
 }
 
