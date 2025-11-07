@@ -6,7 +6,7 @@
  */
 
 // 1. Read the Base URL from your Netlify environment variable
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 
 // This is a failsafe in case the variable is missing during local development
 if (!BASE_URL && import.meta.env.MODE === 'production') {
