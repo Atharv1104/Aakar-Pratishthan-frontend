@@ -3,6 +3,7 @@ import styles from "../../../CSS/News/newspage.module.css";
 import { useTranslation } from 'react-i18next';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import React, { useState, useEffect } from 'react'; // Import React hooks
+import apiClient from '../../utils/apiClients.js';
 
 export default function News() {
     const { t } = useTranslation('common');
@@ -14,8 +15,8 @@ export default function News() {
         const fetchNews = async () => {
             try {
                 // This matches your backend GET route
-                const response = await fetch('/api/news');
-                console.log(response); 
+                const response = await apiClient('/api/news');
+                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch news');
                 }
