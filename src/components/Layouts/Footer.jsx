@@ -51,7 +51,7 @@ const handleNavigation = (href, event) => {
 
 function Footer() {
     const currentYear = new Date().getFullYear();
-    const { t } = useTranslation('privacypage');
+    const { t } = useTranslation('common');
     return (
         <footer className={Styles.footerContainer}>
             {/* Main Footer Content */}
