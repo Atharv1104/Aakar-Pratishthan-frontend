@@ -58,7 +58,7 @@ function ManageNews() {
             return;
         }
         try {
-            const res = await apiClient(`/api/news/${id}`, {
+            const res = await apiClient(`/news/${id}`, {
                 method: 'DELETE',
             });
             if (res.ok) {

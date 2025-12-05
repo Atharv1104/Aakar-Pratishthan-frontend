@@ -30,7 +30,7 @@ function DonationForm() {
     const onSubmit = async (data) => {
         try {
             // The API route is /api/donation, not api/donation
-            const res = await apiClient("/api/donation", {
+            const res = await apiClient("/donation", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
