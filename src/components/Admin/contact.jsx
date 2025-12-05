@@ -89,7 +89,7 @@ const Contact = () => {
     const fetchSubmissions = async () => {
         setLoading(true);
         try {
-            const res = await apiClient('/api/contact');
+            const res = await apiClient('/contact');
             if (!res.ok) throw new Error('Failed to fetch contact submissions');
             const data = await res.json();
             setSubmissions(data);
