@@ -46,7 +46,7 @@ function Dashboard() {
             try {
                 setLoading(true);
                 // This calls the new route you just added
-                const res = await apiClient('/api/dashboard/stats');
+                const res = await apiClient('/dashboard/stats');
                 if (!res.ok) throw new Error('Failed to fetch dashboard stats');
                 const data = await res.json();
                 setStats(data);

@@ -12,7 +12,6 @@ import {
     Card,
     CardContent,
     IconButton,
-    CircularProgress,
     Stack,
     Chip
 } from "@mui/material";
@@ -90,7 +89,8 @@ const ManageDonations = () => {
     const fetchSubmissions = async () => {
         setLoading(true);
         try {
-            const res = await apiClient('/api/donation');
+            // FIX: Removed '/api' prefix
+            const res = await apiClient('/donation');
             if (!res.ok) throw new Error('Failed to fetch donation records');
             const data = await res.json();
             setSubmissions(data);
@@ -111,7 +111,8 @@ const ManageDonations = () => {
             return;
         }
         try {
-            const res = await apiClient(`/api/donation/${id}`, { method: 'DELETE' });
+            // FIX: Removed '/api' prefix
+            const res = await apiClient(`/donation/${id}`, { method: 'DELETE' });
             if (!res.ok) throw new Error('Failed to delete');
             fetchSubmissions(); // Refresh data
             handleCloseModal(); // Close modal if it was open
@@ -138,7 +139,8 @@ const ManageDonations = () => {
             headerName: "Date", 
             flex: 1, 
             type: "date",
-            valueGetter: (params) => new Date(params.row.createdAt)
+            // FIX: Updated valueGetter for DataGrid v8
+            valueGetter: (value, row) => new Date(row.createdAt)
         },
         { 
             field: "fullName", 
@@ -217,7 +219,7 @@ const ManageDonations = () => {
                 <p>View all confirmed donation submissions</p>
             </Box>
             <Box m={"1rem 0"} height={"75vh"} sx={{
-                "& .MMuiDataGrid-root": { border: "none" },
+                "& .MuiDataGrid-root": { border: "none" }, // Fixed Typo MMuiDataGrid -> MuiDataGrid
                 "& .MuiDataGrid-cell": { borderBottom: "none" },
                 "& .name-column--cell": { color: "#080647ff" },
                 "& .MuiDataGrid-columnHeader": {
@@ -232,7 +234,7 @@ const ManageDonations = () => {
                     rows={submissions}
                     columns={isMobile ? mobileColumns : desktopColumns}
                     loading={loading}
-                    getRowId={(row) => row._id} // Use MongoDB's _id
+                    getRowId={(row) => row._id} 
                 />
             </Box>
              <DonationDetailModal
@@ -245,4 +247,4 @@ const ManageDonations = () => {
     )
 }
 
-export default ManageDonations
+export default ManageDonations;

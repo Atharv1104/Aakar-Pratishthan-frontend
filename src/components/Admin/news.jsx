@@ -37,7 +37,7 @@ function ManageNews() {
     const fetchNews = async () => {
         try {
             setLoading(true);
-            const res = await apiClient('/api/news');
+            const res = await apiClient('/news');
             const data = await res.json();
             setNewsItems(data);
         } catch (err) {

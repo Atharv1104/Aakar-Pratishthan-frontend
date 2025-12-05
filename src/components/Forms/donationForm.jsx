@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import styles from "../../CSS/Donationpage/donationform.module.css";
 import { useTranslation } from 'react-i18next';
+import apiClient from "../../utils/apiClients";
 const nameRegex = /^[A-Za-z\s'-]{2,100}$/; // Updated to 100 to match model
 const phoneRegex = /^[0-9]{7,15}$/;         
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
@@ -29,7 +30,7 @@ function DonationForm() {
     const onSubmit = async (data) => {
         try {
             // The API route is /api/donation, not api/donation
-            const res = await fetch("/api/donation", {
+            const res = await apiClient("/api/donation", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

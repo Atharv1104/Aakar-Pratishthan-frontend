@@ -35,7 +35,7 @@ function AddVolunteerForm({ onVolunteerAdded, handleClose }) {
     const onSubmit = async (data) => {
         setServerError('');
         try {
-            const res = await apiClient("/api/volunteer", {
+            const res = await apiClient("/volunteer", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

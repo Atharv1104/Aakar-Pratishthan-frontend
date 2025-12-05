@@ -8,17 +8,17 @@ import {
     Dialog,
     DialogTitle,
     DialogContent,
+    DialogActions, // Added missing import
     Card,
     CardContent,
     Stack,
     IconButton,
-    CircularProgress,
-    Modal // Use Modal for the form
+    Modal 
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import CloseIcon from '@mui/icons-material/Close';
 import AddIcon from '@mui/icons-material/Add';
-import AddVolunteerForm from '../Forms/addVoluteer.jsx'; // Import your new form
+import AddVolunteerForm from '../Forms/addVoluteer.jsx'; 
 import apiClient from '../../utils/apiClients.js';
 
 // Style for the modal
@@ -90,21 +90,18 @@ const Team = () => {
     const [volunteers, setVolunteers] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // State for mobile "View Details" modal
     const [detailModalOpen, setDetailModalOpen] = useState(false);
     const [selectedUser, setSelectedUser] = useState(null);
-
-    // State for "Add Volunteer" modal
     const [addModalOpen, setAddModalOpen] = useState(false);
 
     // --- DATA FETCHING ---
     const fetchVolunteers = async () => {
         setLoading(true);
         try {
-            const res = await apiClient('/api/volunteer');
+            // FIX: Removed '/api' prefix
+            const res = await apiClient('/volunteer');
             if (!res.ok) throw new Error('Failed to fetch data');
             const data = await res.json();
-            // Use the 'events' array from your API response [cite: src/routes/volunteer.route.js]
             setVolunteers(data.events || []); 
         } catch (err) {
             console.error(err);
@@ -120,14 +117,15 @@ const Team = () => {
     // --- EVENT HANDLERS ---
     const handleStatusChange = async (id, newStatus) => {
         try {
-            const res = await apiClient(`/api/volunteer/${id}`, {
+            // FIX: Removed '/api' prefix
+            const res = await apiClient(`/volunteer/${id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ status: newStatus }),
             });
             if (!res.ok) throw new Error('Failed to update status');
-            fetchVolunteers(); // Refresh data
-            handleCloseDetailModal(); // Close mobile modal if open
+            fetchVolunteers(); 
+            handleCloseDetailModal();
         } catch (err) {
             console.error(err);
             alert('Failed to update status');
@@ -137,19 +135,19 @@ const Team = () => {
     const handleDelete = async (id) => {
         if (!window.confirm("Are you sure you want to delete this volunteer permanently?")) return;
         try {
-            const res = await apiClient(`/api/volunteer/${id}`, {
+            // FIX: Removed '/api' prefix
+            const res = await apiClient(`/volunteer/${id}`, {
                 method: 'DELETE',
             });
             if (!res.ok) throw new Error('Failed to delete');
-            fetchVolunteers(); // Refresh data
-            handleCloseDetailModal(); // Close mobile modal if open
+            fetchVolunteers(); 
+            handleCloseDetailModal(); 
         } catch (err) {
             console.error(err);
             alert('Failed to delete volunteer');
         }
     };
 
-    // Mobile "View" button
     const handleViewClick = (user) => {
         setSelectedUser(user);
         setDetailModalOpen(true);
@@ -167,14 +165,16 @@ const Team = () => {
             field: "name", 
             headerName: "Name", 
             flex: 1, 
-            valueGetter: (params) => `${params.row.firstname} ${params.row.lastname}`
+            // FIX: Updated valueGetter for DataGrid v8
+            valueGetter: (value, row) => `${row.firstname} ${row.lastname}`
         },
         { 
             field: "dob", 
             headerName: "DOB", 
             flex: 1, 
             type: "date",
-            valueGetter: (params) => new Date(params.row.dob)
+            // FIX: Updated valueGetter for DataGrid v8
+            valueGetter: (value, row) => new Date(row.dob)
         },
         { field: "phone", headerName: "Phone Number", flex: 1 },
         { field: "email", headerName: "Email", flex: 1 },
@@ -216,7 +216,8 @@ const Team = () => {
             field: "name", 
             headerName: "Name", 
             flex: 1,
-            valueGetter: (params) => `${params.row.firstname} ${params.row.lastname}`
+            // FIX: Updated valueGetter for DataGrid v8
+            valueGetter: (value, row) => `${row.firstname} ${row.lastname}`
         },
         { field: "status", headerName: "Status", flex: 1 },
         {
@@ -254,7 +255,6 @@ const Team = () => {
                 </Button>
             </Box>
 
-            {/* Modal for ADDING a new volunteer */}
             <Modal
                 open={addModalOpen}
                 onClose={() => setAddModalOpen(false)}
@@ -262,12 +262,11 @@ const Team = () => {
                 <Box sx={modalStyle}>
                     <AddVolunteerForm 
                         handleClose={() => setAddModalOpen(false)}
-                        onVolunteerAdded={fetchVolunteers} // Pass the refresh function
+                        onVolunteerAdded={fetchVolunteers} 
                     />
                 </Box>
             </Modal>
 
-            {/* Data Grid */}
             <Box m={"1rem 0"} height={"75vh"} sx={{
                 "& .MuiDataGrid-root": { border: "none" },
                 "& .MuiDataGrid-cell": { borderBottom: "none" },
@@ -282,11 +281,10 @@ const Team = () => {
                     rows={volunteers}
                     columns={isMobile ? mobileColumns : desktopColumns}
                     loading={loading}
-                    getRowId={(row) => row._id} // Tell DataGrid to use _id as the unique key
+                    getRowId={(row) => row._id} 
                 />
             </Box>
             
-            {/* Modal for VIEWING details on mobile */}
             <UserDetailModal
                 user={selectedUser}
                 open={detailModalOpen}

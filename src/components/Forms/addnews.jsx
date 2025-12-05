@@ -32,7 +32,7 @@ function AddNews() {
             formData.append('image', data.image[0]);
 
             
-            const res = await apiClient("/api/news", { // Was "/api/upload"
+            const res = await apiClient("/news", { // Was "/api/upload"
                 method: "POST",
                 body: formData,
             });
