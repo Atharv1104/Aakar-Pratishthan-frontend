@@ -15,7 +15,7 @@ const formatDate = (dateString) => {
 };
 
 const Events = () => {
-  const [events, setEvents] = useState([]); // Initialize as empty array
+  const [events, setEvents] = useState([]); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -23,22 +23,18 @@ const Events = () => {
   const fetchEvents = useCallback(async () => {
     setLoading(true);
     try {
-      // FIX 1: Use '/events', not '/api/events'
       const res = await apiClient('/events');
       if (!res.ok) {
         throw new Error('Failed to fetch events');
       }
       const data = await res.json();
       
-      // FIX 2: Handle the response structure safely.
-      // If backend returns { events: [...] }, use data.events.
-      // If backend returns [...], use data.
+      // Handle the response structure safely
       const eventList = data.events || data || [];
       
       if (Array.isArray(eventList)) {
         setEvents(eventList);
       } else {
-        console.error("API did not return an array:", data);
         setEvents([]); 
       }
 
@@ -57,6 +53,17 @@ const Events = () => {
   const handleEventAdded = () => {
     setShowAddModal(false); 
     fetchEvents(); 
+  };
+
+  const handleDelete = async (id) => {
+    if(!window.confirm("Are you sure you want to delete this event?")) return;
+    try {
+      const res = await apiClient(`/events/${id}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error("Failed to delete");
+      setEvents(prev => prev.filter(e => e._id !== id));
+    } catch (err) {
+      alert(err.message);
+    }
   };
 
   const openModal = () => setShowAddModal(true);
@@ -81,23 +88,39 @@ const Events = () => {
           </tr>
         </thead>
         <tbody>
-          {/* FIX 3: Add a check to ensure events is an array before mapping */}
           {Array.isArray(events) && events.length > 0 ? (
             events.map((event) => (
               <tr key={event._id}>
                 <td>
+                  {/* FIX 1: Use 'images' array (images[0].url) instead of 'image' string */}
                   <img 
-                    src={event.image || 'https://placehold.co/100x50?text=No+Image'} 
-                    alt={event.title} 
+                    src={event.images?.[0]?.url || 'https://placehold.co/100x50?text=No+Image'} 
+                    alt={event.title?.en || 'Event'} 
                     width="100" 
                     onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/100x50?text=No+Image'; }}
                   />
                 </td>
-                <td>{event.title}</td>
-                <td>{formatDate(event.date)}</td>
-                <td>{event.location}</td>
+                
+                {/* FIX 2: Render specific language string, NOT the whole object */}
                 <td>
-                  <button className={styles.deleteButton}>Delete</button>
+                    {event.title?.en || event.title?.mr || 'Untitled'}
+                </td>
+                
+                {/* FIX 3: Use 'eventDate' (from DB), not 'date' */}
+                <td>{formatDate(event.eventDate)}</td>
+                
+                {/* FIX 4: Render specific language string for location */}
+                <td>
+                    {event.location?.en || event.location?.mr || 'No Location'}
+                </td>
+                
+                <td>
+                  <button 
+                    className={styles.deleteButton}
+                    onClick={() => handleDelete(event._id)}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))
