@@ -27,7 +27,7 @@ function RegForm() {
 
     const onSubmit = async (data) => {
         try {
-            const res = await apiClient("/api/contact", {
+            const res = await apiClient("/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
