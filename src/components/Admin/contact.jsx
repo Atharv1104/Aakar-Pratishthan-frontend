@@ -12,7 +12,6 @@ import {
     Card,
     CardContent,
     IconButton,
-    CircularProgress,
     Stack
 } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
@@ -89,7 +88,8 @@ const Contact = () => {
     const fetchSubmissions = async () => {
         setLoading(true);
         try {
-            const res = await apiClient('/contact');
+            // FIX 1: Removed '/api' to prevent double prefix
+            const res = await apiClient('/contact'); 
             if (!res.ok) throw new Error('Failed to fetch contact submissions');
             const data = await res.json();
             setSubmissions(data);
@@ -110,7 +110,8 @@ const Contact = () => {
             return;
         }
         try {
-            const res = await apiClient(`/api/contact/${id}`, { method: 'DELETE' });
+            // FIX 2: Removed '/api' here as well
+            const res = await apiClient(`/contact/${id}`, { method: 'DELETE' });
             if (!res.ok) throw new Error('Failed to delete');
             fetchSubmissions(); // Refresh data
             handleCloseModal(); // Close modal if it was open
@@ -138,14 +139,16 @@ const Contact = () => {
             headerName: "Name", 
             flex: 1, 
             cellClassName: "name-column--cell",
-            valueGetter: (params) => `${params.row.firstName} ${params.row.lastName}`
+            // FIX 3: Updated valueGetter for MUI DataGrid v8 (value, row)
+            valueGetter: (value, row) => `${row.firstName} ${row.lastName}`
         },
         { 
             field: "dob", 
             headerName: "Date of Birth", 
             flex: 1, 
             type: "date",
-            valueGetter: (params) => new Date(params.row.dob)
+            // FIX 4: Updated valueGetter syntax
+            valueGetter: (value, row) => new Date(row.dob)
         },
         { field: "phone", headerName: "Phone Number", flex: 1 },
         { field: "email", headerName: "Email", flex: 1 },
@@ -180,14 +183,16 @@ const Contact = () => {
             field: "name", 
             headerName: "Name", 
             flex: 1,
-            valueGetter: (params) => `${params.row.firstName} ${params.row.lastName}`
+            // FIX 5: Updated valueGetter syntax
+            valueGetter: (value, row) => `${row.firstName} ${row.lastName}`
         },
         { 
             field: "createdAt", 
             headerName: "Received", 
             flex: 1, 
             type: "date",
-            valueGetter: (params) => new Date(params.row.createdAt)
+            // FIX 6: Updated valueGetter syntax
+            valueGetter: (value, row) => new Date(row.createdAt)
         },
         {
             field: "actions",
@@ -235,4 +240,4 @@ const Contact = () => {
         </Box>
     )
 }
-export default Contact
+export default Contact;
