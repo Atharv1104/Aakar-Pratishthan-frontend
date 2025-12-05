@@ -26,7 +26,7 @@ function LoginPage() {
         setServerError('');
         try {
             // Call your backend login route
-            const res = await apiClient("auth/login", {
+            const res = await apiClient("/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
